@@ -13,7 +13,7 @@ function updateCarousel() {
 
   // Atualiza os indicadores (bolinhas)
   dots.forEach((dot, i) => {
-    dot.classList.toggle("bg-blue-500", i === index); // Deixa a bolinha ativa azul
+    dot.classList.toggle("bg-neutral-700", i === index); // Deixa a bolinha ativa azul
     dot.classList.toggle("bg-gray-400", i !== index); // Bolinhas inativas cinza
   });
 }
