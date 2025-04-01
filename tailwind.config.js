@@ -8,6 +8,7 @@
         blue_clear_hover : "#004ECC",
         discount_color: "#5EC0BE",
         newproduct_color_tag: "#00264E",
+        gray_clear: "#DEDEDE",
       },
 
       fontFamily:{
