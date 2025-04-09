@@ -27,7 +27,7 @@ next.addEventListener("click", () => {
 // Voltar
 prev.addEventListener("click", () => {
   index = (index - 1 + totalSlides) % totalSlides;
-  updateCarousel();
+  updateCarousel2();
 });
 
 // Clicar nas bolinhas para navegar
