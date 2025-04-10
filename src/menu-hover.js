@@ -52,6 +52,7 @@ const departments = [
 
   export const mouseOnMenuHover = () => {
     menuHover.addEventListener("mouseenter", () => {
+      title.classList.add("hidden");
       containerMenu.classList.remove("hidden")
   
       containerDept.innerHTML = "" 
@@ -66,20 +67,21 @@ const departments = [
     addCategorias()
     mouseOutMenuHover()
   }
-
   
+  
+  const title = document.getElementById("titleDept");
   export const mouseOnDeptHover = () => {
-    deptHover.forEach((dept) => {
-      
+    deptHover.forEach((dept) => { 
       dept.addEventListener("mouseenter", () => {
+        title.classList.remove("hidden");
         containerDept.innerHTML = "";
-  
-        const item = document.createElement("h1");
-        item.className = "text-[16px] font-nunito font-bold";
-        item.textContent = "Categoria ativa"; // Adicionei conteúdo ao H1
-  
-        containerCat.appendChild(item);
         containerMenu.classList.remove("hidden");
+
+      });
+      containerMenu.addEventListener("mouseleave", () => {
+        containerMenu.classList.add("hidden");
+        title.classList.add("hidden")
+        containerDept.innerHTML = "";
       });
     });
   };

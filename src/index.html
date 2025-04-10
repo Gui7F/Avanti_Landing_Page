@@ -6,6 +6,7 @@
     <title>Avanti</title>
     <link href="./output.css" rel="stylesheet" />
     <link rel="stylesheet" href="font.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     
@@ -32,7 +33,7 @@
                 <img
                   src="./img/logo.png"
                   alt="logo Avanti"
-                  class="object-cover"
+                  class="object-cover w-full h-full"
                 />
               </div>
               <div class="w-[590px] h-[40px] relative rounded-md ml-20" style="box-shadow: 0px 0px 3px  #737373, -4px 0px 8px transparent;">
@@ -92,9 +93,12 @@
       </div>
        <!-- Navbar Desktop -->
       <!-- Menu Hover -->
-      <div id="containerMenu" class=" hidden w-[1295px] h-[330px] bg-white absolute z-50 translate-x-[515px] top-[158px] flex justify-between p-4 overflow-hidden">
+      <div id="containerMenu" class="hidden w-[1295px] h-[330px] bg-white absolute z-50 top-[158px] left-1/2 transform -translate-x-1/2 flex justify-between p-4 overflow-hidden">
            <div class="containerDept h-[330px] font-nunito font-normal text-[14px] text-[#656565] overflow-y-auto space-y-3">
             <!-- Injection of departaments here -->
+           </div>
+           <div id="titleDept" class="hidden font-nunito font-bold text-[27px]">
+            <h1>Departamento</h1>
            </div>
            <div id="containerCat" class="flex items-center justify-start space-x-20 font-nunito text-[#656565] text-[14px] mr-[370px] mb-[50px]">
             <!-- Injection of categories here -->
@@ -122,7 +126,7 @@
     <main class="m-auto">
       <div class=" h-[510px] w-full bg-[#E7E7EA] pt-[100px] mb-[250px]">
         <div class="flex justify-center items-center">
-          <div class="w-[685px] h-[510px]">
+          <div class="w-[685px] h-[510px] overflow-hidden">
             <img class="w-full h-full object-cover" src="./img/principalofer1.jpg" />
           </div> 
           <div class="font-nunito text-center">

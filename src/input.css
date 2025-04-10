@@ -13,22 +13,7 @@
 @import '@fontsource/nunito/700-italic.css';
 
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-    .scrollbar-thin::-webkit-scrollbar {
-      width: 4px;
-    }
-  
-    .scrollbar-thin::-webkit-scrollbar-thumb {
-      background-color: rgba(100, 100, 100, 0.4);
-      border-radius: 8px;
-    }
-  
-    .scrollbar-thin::-webkit-scrollbar-track {
-      background: transparent;
-    }
-  }
