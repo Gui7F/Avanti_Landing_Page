@@ -7,3 +7,9 @@ import {mouseOnMenuHover} from "./menu-hover.js"
 import { mouseOnDeptHover } from "./menu-hover.js"
 mouseOnDeptHover()
 mouseOnMenuHover()
+
+import { initCarousel } from "./carouselMobile.js"
+// event to ensure that the function executes after loading all the html
+document.addEventListener("DOMContentLoaded", function() {
+    initCarousel()
+});
