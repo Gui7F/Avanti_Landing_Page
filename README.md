@@ -26,11 +26,11 @@ A interface foi projetada para oferecer uma ótima experiência de navegação e
 
 ### Desktop
 
-![Avanti E-commerce - Desktop](./screenshots/desktop.png)
+![Avanti E-commerce - Desktop](./screenshot/desktop.png)
 
 ### Mobile
 
-![Avanti E-commerce - Mobile](./screenshots/mobile.png)
+![Avanti E-commerce - Mobile](./screenshot/mobile.png)
 
 > *(Adicione suas imagens na pasta `screenshots` com os nomes indicados ou ajuste os caminhos conforme necessário.)*
 
