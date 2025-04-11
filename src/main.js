@@ -13,3 +13,6 @@ import { initCarousel } from "./carouselMobile.js"
 document.addEventListener("DOMContentLoaded", function() {
     initCarousel()
 });
+
+import { initInput } from "./searchInput.js"
+initInput();
