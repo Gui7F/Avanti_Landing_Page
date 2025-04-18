@@ -181,7 +181,79 @@
     </header>
 
     <main class="m-auto">
-      <div class="2xl:h-auto 2xl:w-full  bg-[#E7E7EA] 2xl:pt-[100px] 2xl:mb-[250px] max-[700px]:pt-[200px] max-[700px]:relative">
+      <section class="containerOferCarrousel relative overflow-hidden w-full bg-[#E7E7EA] 2xl:h-auto 2xl:mb-[250px]">
+        <!-- Trilho do carrossel -->
+        <div id="carouselWrapper" class="flex transition-transform duration-500 ease-in-out w-full">
+          <!-- Card -->
+          <div class="cardOfer flex-shrink-0 w-full h-auto 2xl:pt-[100px]  max-[700px]:pt-[200px] max-[700px]:relative">
+            <div class="flex justify-center items-center">
+              <div class="2xl:w-[685px] 2xl:h-[510px] overflow-hidden h-[306px] max-[700px]:mr-40">
+                <img class="w-full h-full 2xl:object-cover max-[700px]:scale-[2.3] max-[700px]:pr-20 max-[700px]:pb-10" src="./img/principalofer1.jpg" />
+              </div> 
+              <div class="font-nunito text-center max-[700px]:w-[139px] max-[700px]:h-[164px] max-[700px]:absolute max-[700px]:transform max-[700px]:-translate-x-1/2 max-[700px]:left-[70%]">
+                <h1 class="2xl:text-[100px] text-[40px] font-light max-[700px]:flex max-[700px]:flex-wrap max-[700px]:leading-9 justify-center"><span class="font-bold">SUPER</span>SALE</h1>
+                <h2 class="2xl:text-[25px] text-[13px] text-blue_clear font-bold mb-4" style="letter-spacing: 0.25em;">
+                  ITENS SELECIONADOS COM ATÉ
+                </h2>
+                <h2 class="font-bold 2xl:text-[60px] text-[44px] text-nowrap text-blue_clear max-[700px]:leading-3 max-[700px]:absolute max-[700px]:right-[-20px]">50% OFF</h2>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="cardOfer flex-shrink-0 w-full h-auto 2xl:pt-[100px] max-[700px]:pt-[200px] max-[700px]:relative">
+            <div class="flex justify-center items-center">
+              <div class="2xl:w-[685px] 2xl:h-[510px] overflow-hidden h-[306px] max-[700px]:mr-40">
+                <img class="w-full h-full 2xl:object-cover max-[700px]:scale-[2.3] max-[700px]:pr-20 max-[700px]:pb-10" src="./img/principalofer1.jpg" />
+              </div> 
+              <div class="font-nunito text-center max-[700px]:w-[139px] max-[700px]:h-[164px] max-[700px]:absolute max-[700px]:transform max-[700px]:-translate-x-1/2 max-[700px]:left-[70%]">
+                <h1 class="2xl:text-[100px] text-[40px] font-light max-[700px]:flex max-[700px]:flex-wrap max-[700px]:leading-9 justify-center"><span class="font-bold">SUPER</span>SALE</h1>
+                <h2 class="2xl:text-[25px] text-[13px] text-blue_clear font-bold mb-4" style="letter-spacing: 0.25em;">
+                  ITENS SELECIONADOS COM ATÉ
+                </h2>
+                <h2 class="font-bold 2xl:text-[60px] text-[44px] text-nowrap text-blue_clear max-[700px]:leading-3 max-[700px]:absolute max-[700px]:right-[-20px]">50% OFF</h2>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="cardOfer flex-shrink-0 w-full h-auto 2xl:pt-[100px]  max-[700px]:pt-[200px] max-[700px]:relative">
+            <div class="flex justify-center items-center">
+              <div class="2xl:w-[685px] 2xl:h-[510px] overflow-hidden h-[306px] max-[700px]:mr-40">
+                <img class="w-full h-full 2xl:object-cover max-[700px]:scale-[2.3] max-[700px]:pr-20 max-[700px]:pb-10" src="./img/principalofer1.jpg" />
+              </div> 
+              <div class="font-nunito text-center max-[700px]:w-[139px] max-[700px]:h-[164px] max-[700px]:absolute max-[700px]:transform max-[700px]:-translate-x-1/2 max-[700px]:left-[70%]">
+                <h1 class="2xl:text-[100px] text-[40px] font-light max-[700px]:flex max-[700px]:flex-wrap max-[700px]:leading-9 justify-center"><span class="font-bold">SUPER</span>SALE</h1>
+                <h2 class="2xl:text-[25px] text-[13px] text-blue_clear font-bold mb-4" style="letter-spacing: 0.25em;">
+                  ITENS SELECIONADOS COM ATÉ
+                </h2>
+                <h2 class="font-bold 2xl:text-[60px] text-[44px] text-nowrap text-blue_clear max-[700px]:leading-3 max-[700px]:absolute max-[700px]:right-[-20px]">50% OFF</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Bolinhas de navegação -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
+          <span class="dotOfer w-2 h-2 bg-gray-400 rounded-full cursor-pointer"></span>
+          <span class="dotOfer w-2 h-2 bg-gray-400 rounded-full cursor-pointer"></span>
+          <span class="dotOfer w-2 h-2 bg-gray-400 rounded-full cursor-pointer"></span>
+        </div>
+      
+        <!-- Botões -->
+        <button id="prevOfer" class="max-[700px]:hidden group absolute top-1/2 left-[2px] transform -translate-y-1/2 text-blue_clear bg-white border-2 border-blue_clear hover:bg-[#004ECC] rounded-full p-1 z-10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+          class="fill-blue-500 group-hover:fill-white transition-colors duration-200">
+          <path d="m7.85 13l2.85 2.85q.3.3.288.7t-.288.7q-.3.3-.712.313t-.713-.288L4.7 12.7q-.3-.3-.3-.7t.3-.7l4.575-4.575q.3-.3.713-.287t.712.312q.275.3.288.7t-.288.7L7.85 11H19q.425 0 .713.288T20 12t-.288.713T19 13z"/>
+        </svg>
+        </button>
+        <button id="nextOfer" class="max-[700px]:hidden group absolute top-1/2 right-[2px] transform -translate-y-1/2 text-blue_clear bg-white border-2 border-blue_clear hover:bg-[#004ECC] rounded-full p-1 z-10">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+          class="fill-blue-500 group-hover:fill-white transition-colors duration-200">
+          <path d="M16.15 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.312t.712.287L19.3 11.3q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7z"/>
+        </svg>
+        </button>
+      </section>
+      
+      <!-- <div class="2xl:h-auto 2xl:w-full  bg-[#E7E7EA] 2xl:pt-[100px] 2xl:mb-[250px] max-[700px]:pt-[200px] max-[700px]:relative">
         <div class="flex justify-center items-center">
           <div class="2xl:w-[685px] 2xl:h-[510px] overflow-hidden h-[306px] max-[700px]:mr-40">
             <img class="w-full h-full 2xl:object-cover max-[700px]:scale-[2.3] max-[700px]:pr-20 max-[700px]:pb-10" src="./img/principalofer1.jpg" />
@@ -194,7 +266,7 @@
             <h2 class="font-bold 2xl:text-[60px] text-[44px] text-nowrap text-blue_clear max-[700px]:leading-3 max-[700px]:absolute max-[700px]:right-[-20px]">50% OFF</h2>
           </div>
         </div>
-     </div>
+      </div> -->
       <!-- Text Lançamentos -->
       <div class="flex justify-between m-auto 2xl:w-[1250px] 2xl:mt-10 w-[92%] mt-20">
         <h2 class="font-nunito font-bold 2xl:text-2xl text-[16px]">Lançamentos</h2>
@@ -202,504 +274,504 @@
       </div>
       <!-- Carrousel Desktop -->
       <section class="relative w-full max-w-[1288px] mx-auto overflow-hidden py-4 max-[700px]:hidden">
-        <!-- Contêiner do carrossel -->
-        <article
-          id="carousel"
-          class="flex w-full transition-transform duration-500 ease-in-out m-auto"
+            <!-- Contêiner do carrossel -->
+            <article
+              id="carousel"
+              class="flex w-full transition-transform duration-500 ease-in-out m-auto"
+            >
+            <!--Slide1 -->
+              <div class="slide w-full flex-shrink-0 grid grid-cols-5 gap-0 p-5">
+                <!-- Card -->
+                <div style="box-shadow: 0px 0px 3px  #737373, -4px 0px 8px transparent;" class=" rounded-xl p-4 w-[95%]">
+                  <div class="absolute top-8">
+                    <p class="bg-newproduct_color_tag text-white text-[10px] font-nunito font-medium rounded-md p-2 leading-none">NOVO</p>
+                  </div>
+                  <div class="h-[300px] overflow-hidden mb-5">
+                    <img src="./img/person1.png" alt="" class="object-cover w-full" />
+                  </div>
+                  <div class="">
+                    <h3 class="font-nunito font-extralight mb-2 leading-4">Lorem ipsum dolor sit amet consectetur adipisicing elit<h3>
+                  </div>
+                  <div class="flex align-middle">
+                    <div class="mb-1">
+                      <p style="text-decoration: line-through;" class="font-nunito font-light text-xs leading-3">R$ 100,00</p>
+                      <p class="font-nunito font-bold text-base">R$79,90</p>
+                    </div>
+                    <div>
+                      <p class="text-gray-50 text-xs font-nunito font-semibold bg-discount_color underline rounded-[4px] ml-2 px-2 py-[2px]">10% OFF</p>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <p class="font-nunito text-xs">Ou em até <span class="font-bold text-neutral-800">10x de R$ 7,90</span></p>
+                  </div>
+                  <div class="m-auto">
+                    <button class="text-white font-nunito font-medium bg-blue_clear hover:bg-[#004ECC] w-full rounded-lg py-2 px-3" >Comprar</button>
+                  </div>
+                </div>
+                <!-- Card -->
+
+                <!-- Card -->
+                <div style="box-shadow: 0px 0px 3px  #737373, -4px 0px 8px transparent;" class=" rounded-xl p-4 w-[95%]">
+                  <div class="absolute top-8">
+                    <p class="bg-newproduct_color_tag text-white text-[10px] font-nunito font-medium rounded-md p-2 leading-none">NOVO</p>
+                  </div>
+                  <div class="h-[300px] overflow-hidden mb-5">
+                    <img src="./img/person1.png" alt="" class="object-cover w-full" />
+                  </div>
+                  <div class="">
+                    <h3 class="font-nunito font-extralight mb-2 leading-4">Lorem ipsum dolor sit amet consectetur adipisicing elit<h3>
+                  </div>
+                  <div class="flex align-middle">
+                    <div class="mb-1">
+                      <p style="text-decoration: line-through;" class="font-nunito font-light text-xs leading-3">R$ 100,00</p>
+                      <p class="font-nunito font-bold text-base">R$79,90</p>
+                    </div>
+                    <div>
+                      <p class="text-gray-50 text-xs font-nunito font-semibold bg-discount_color underline rounded-[4px] ml-2 px-2 py-[2px]">10% OFF</p>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <p class="font-nunito text-xs">Ou em até <span class="font-bold text-neutral-800">10x de R$ 7,90</span></p>
+                  </div>
+                  <div class="m-auto">
+                    <button class="text-white font-nunito font-medium bg-blue_clear hover:bg-[#004ECC] w-full rounded-lg py-2 px-3" >Comprar</button>
+                  </div>
+                </div>
+                <!-- Card -->
+                
+      
+                <!-- Card -->
+                <div style="box-shadow: 0px 0px 3px  #737373, -4px 0px 8px transparent;" class=" rounded-xl p-4 w-[95%]">
+                  <div class="absolute top-8">
+                    <p class="bg-newproduct_color_tag text-white text-[10px] font-nunito font-medium rounded-md p-2 leading-none">NOVO</p>
+                  </div>
+                  <div class="h-[300px] overflow-hidden mb-5">
+                    <img src="./img/person1.png" alt="" class="object-cover w-full" />
+                  </div>
+                  <div class="">
+                    <h3 class="font-nunito font-extralight mb-2 leading-4">Lorem ipsum dolor sit amet consectetur adipisicing elit<h3>
+                  </div>
+                  <div class="flex align-middle">
+                    <div class="mb-1">
+                      <p style="text-decoration: line-through;" class="font-nunito font-light text-xs leading-3">R$ 100,00</p>
+                      <p class="font-nunito font-bold text-base">R$79,90</p>
+                    </div>
+                    <div>
+                      <p class="text-gray-50 text-xs font-nunito font-semibold bg-discount_color underline rounded-[4px] ml-2 px-2 py-[2px]">10% OFF</p>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <p class="font-nunito text-xs">Ou em até <span class="font-bold text-neutral-800">10x de R$ 7,90</span></p>
+                  </div>
+                  <div class="m-auto">
+                    <button class="text-white font-nunito font-medium bg-blue_clear hover:bg-[#004ECC] w-full rounded-lg py-2 px-3" >Comprar</button>
+                  </div>
+                </div>
+                <!-- Card -->
+                
+            
+                <!-- Card -->
+                <div style="box-shadow: 0px 0px 3px  #737373, -4px 0px 8px transparent;" class=" rounded-xl p-4 w-[95%]">
+                  <div class="absolute top-8">
+                    <p class="bg-newproduct_color_tag text-white text-[10px] font-nunito font-medium rounded-md p-2 leading-none">NOVO</p>
+                  </div>
+                  <div class="h-[300px] overflow-hidden mb-5">
+                    <img src="./img/person1.png" alt="" class="object-cover w-full" />
+                  </div>
+                  <div class="">
+                    <h3 class="font-nunito font-extralight mb-2 leading-4">Lorem ipsum dolor sit amet consectetur adipisicing elit<h3>
+                  </div>
+                  <div class="flex align-middle">
+                    <div class="mb-1">
+                      <p style="text-decoration: line-through;" class="font-nunito font-light text-xs leading-3">R$ 100,00</p>
+                      <p class="font-nunito font-bold text-base">R$79,90</p>
+                    </div>
+                    <div>
+                      <p class="text-gray-50 text-xs font-nunito font-semibold bg-discount_color underline rounded-[4px] ml-2 px-2 py-[2px]">10% OFF</p>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <p class="font-nunito text-xs">Ou em até <span class="font-bold text-neutral-800">10x de R$ 7,90</span></p>
+                  </div>
+                  <div class="m-auto">
+                    <button class="text-white font-nunito font-medium bg-blue_clear hover:bg-[#004ECC] w-full rounded-lg py-2 px-3" >Comprar</button>
+                  </div>
+                </div>
+                <!-- Card -->
+            
+
+                <!-- Card -->
+                <div style="box-shadow: 0px 0px 3px  #737373, -4px 0px 8px transparent;" class=" rounded-xl p-4 w-[95%]">
+                  <div class="absolute top-8">
+                    <p class="bg-newproduct_color_tag text-white text-[10px] font-nunito font-medium rounded-md p-2 leading-none">NOVO</p>
+                  </div>
+                  <div class="h-[300px] overflow-hidden mb-5">
+                    <img src="./img/person1.png" alt="" class="object-cover w-full" />
+                  </div>
+                  <div class="">
+                    <h3 class="font-nunito font-extralight mb-2 leading-4">Lorem ipsum dolor sit amet consectetur adipisicing elit<h3>
+                  </div>
+                  <div class="flex align-middle">
+                    <div class="mb-1">
+                      <p style="text-decoration: line-through;" class="font-nunito font-light text-xs leading-3">R$ 100,00</p>
+                      <p class="font-nunito font-bold text-base">R$79,90</p>
+                    </div>
+                    <div>
+                      <p class="text-gray-50 text-xs font-nunito font-semibold bg-discount_color underline rounded-[4px] ml-2 px-2 py-[2px]">10% OFF</p>
+                    </div>
+                  </div>
+                  <div class="mb-4">
+                    <p class="font-nunito text-xs">Ou em até <span class="font-bold text-neutral-800">10x de R$ 7,90</span></p>
+                  </div>
+                  <div class="m-auto">
+                    <button class="text-white font-nunito font-medium bg-blue_clear hover:bg-[#004ECC] w-full rounded-lg py-2 px-3" >Comprar</button>
+                  </div>
+                </div>
+                <!-- Card -->
+                
+              </div>
+            <!-- Slide1 -->
+
+            <!--Slide2 -->
+            <div class="slide w-full flex-shrink-0 grid grid-cols-5 gap-0 p-5">
+              <!-- Card -->
+              <div style="box-shadow: 0px 0px 3px  #737373, -4px 0px 8px transparent;" class=" rounded-xl p-4 w-[95%]">
+                <div class="absolute top-8">
+                  <p class="bg-newproduct_color_tag text-white text-[10px] font-nunito font-medium rounded-md p-2 leading-none">NOVO</p>
+                </div>
+                <div class="h-[300px] overflow-hidden mb-5">
+                  <img src="./img/person1.png" alt="" class="object-cover w-full" />
+                </div>
+                <div class="">
+                  <h3 class="font-nunito font-extralight mb-2 leading-4">Lorem ipsum dolor sit amet consectetur adipisicing elit<h3>
+                </div>
+                <div class="flex align-middle">
+                  <div class="mb-1">
+                    <p style="text-decoration: line-through;" class="font-nunito font-light text-xs leading-3">R$ 100,00</p>
+                    <p class="font-nunito font-bold text-base">R$79,90</p>
+                  </div>
+                  <div>
+                    <p class="text-gray-50 text-xs font-nunito font-semibold bg-discount_color underline rounded-[4px] ml-2 px-2 py-[2px]">10% OFF</p>
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <p class="font-nunito text-xs">Ou em até <span class="font-bold text-neutral-800">10x de R$ 7,90</span></p>
+                </div>
+                <div class="m-auto">
+                  <button class="text-white font-nunito font-medium bg-blue_clear hover:bg-[#004ECC] w-full rounded-lg py-2 px-3" >Comprar</button>
+                </div>
+              </div>
+              <!-- Card -->
+
+              <!-- Card -->
+              <div style="box-shadow: 0px 0px 3px  #737373, -4px 0px 8px transparent;" class=" rounded-xl p-4 w-[95%]">
+                <div class="absolute top-8">
+                  <p class="bg-newproduct_color_tag text-white text-[10px] font-nunito font-medium rounded-md p-2 leading-none">NOVO</p>
+                </div>
+                <div class="h-[300px] overflow-hidden mb-5">
+                  <img src="./img/person1.png" alt="" class="object-cover w-full" />
+                </div>
+                <div class="">
+                  <h3 class="font-nunito font-extralight mb-2 leading-4">Lorem ipsum dolor sit amet consectetur adipisicing elit<h3>
+                </div>
+                <div class="flex align-middle">
+                  <div class="mb-1">
+                    <p style="text-decoration: line-through;" class="font-nunito font-light text-xs leading-3">R$ 100,00</p>
+                    <p class="font-nunito font-bold text-base">R$79,90</p>
+                  </div>
+                  <div>
+                    <p class="text-gray-50 text-xs font-nunito font-semibold bg-discount_color underline rounded-[4px] ml-2 px-2 py-[2px]">10% OFF</p>
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <p class="font-nunito text-xs">Ou em até <span class="font-bold text-neutral-800">10x de R$ 7,90</span></p>
+                </div>
+                <div class="m-auto">
+                  <button class="text-white font-nunito font-medium bg-blue_clear hover:bg-[#004ECC] w-full rounded-lg py-2 px-3" >Comprar</button>
+                </div>
+              </div>
+              <!-- Card -->
+              
+
+              <!-- Card -->
+              <div style="box-shadow: 0px 0px 3px  #737373, -4px 0px 8px transparent;" class=" rounded-xl p-4 w-[95%]">
+                <div class="absolute top-8">
+                  <p class="bg-newproduct_color_tag text-white text-[10px] font-nunito font-medium rounded-md p-2 leading-none">NOVO</p>
+                </div>
+                <div class="h-[300px] overflow-hidden mb-5">
+                  <img src="./img/person1.png" alt="" class="object-cover w-full" />
+                </div>
+                <div class="">
+                  <h3 class="font-nunito font-extralight mb-2 leading-4">Lorem ipsum dolor sit amet consectetur adipisicing elit<h3>
+                </div>
+                <div class="flex align-middle">
+                  <div class="mb-1">
+                    <p style="text-decoration: line-through;" class="font-nunito font-light text-xs leading-3">R$ 100,00</p>
+                    <p class="font-nunito font-bold text-base">R$79,90</p>
+                  </div>
+                  <div>
+                    <p class="text-gray-50 text-xs font-nunito font-semibold bg-discount_color underline rounded-[4px] ml-2 px-2 py-[2px]">10% OFF</p>
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <p class="font-nunito text-xs">Ou em até <span class="font-bold text-neutral-800">10x de R$ 7,90</span></p>
+                </div>
+                <div class="m-auto">
+                  <button class="text-white font-nunito font-medium bg-blue_clear hover:bg-[#004ECC] w-full rounded-lg py-2 px-3" >Comprar</button>
+                </div>
+              </div>
+              <!-- Card -->
+              
+          
+              <!-- Card -->
+              <div style="box-shadow: 0px 0px 3px  #737373, -4px 0px 8px transparent;" class=" rounded-xl p-4 w-[95%]">
+                <div class="absolute top-8">
+                  <p class="bg-newproduct_color_tag text-white text-[10px] font-nunito font-medium rounded-md p-2 leading-none">NOVO</p>
+                </div>
+                <div class="h-[300px] overflow-hidden mb-5">
+                  <img src="./img/person1.png" alt="" class="object-cover w-full" />
+                </div>
+                <div class="">
+                  <h3 class="font-nunito font-extralight mb-2 leading-4">Lorem ipsum dolor sit amet consectetur adipisicing elit<h3>
+                </div>
+                <div class="flex align-middle">
+                  <div class="mb-1">
+                    <p style="text-decoration: line-through;" class="font-nunito font-light text-xs leading-3">R$ 100,00</p>
+                    <p class="font-nunito font-bold text-base">R$79,90</p>
+                  </div>
+                  <div>
+                    <p class="text-gray-50 text-xs font-nunito font-semibold bg-discount_color underline rounded-[4px] ml-2 px-2 py-[2px]">10% OFF</p>
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <p class="font-nunito text-xs">Ou em até <span class="font-bold text-neutral-800">10x de R$ 7,90</span></p>
+                </div>
+                <div class="m-auto">
+                  <button class="text-white font-nunito font-medium bg-blue_clear hover:bg-[#004ECC] w-full rounded-lg py-2 px-3" >Comprar</button>
+                </div>
+              </div>
+              <!-- Card -->
+          
+
+              <!-- Card -->
+              <div style="box-shadow: 0px 0px 3px  #737373, -4px 0px 8px transparent;" class=" rounded-xl p-4 w-[95%]">
+                <div class="absolute top-8">
+                  <p class="bg-newproduct_color_tag text-white text-[10px] font-nunito font-medium rounded-md p-2 leading-none">NOVO</p>
+                </div>
+                <div class="h-[300px] overflow-hidden mb-5">
+                  <img src="./img/person1.png" alt="" class="object-cover w-full" />
+                </div>
+                <div class="">
+                  <h3 class="font-nunito font-extralight mb-2 leading-4">Lorem ipsum dolor sit amet consectetur adipisicing elit<h3>
+                </div>
+                <div class="flex align-middle">
+                  <div class="mb-1">
+                    <p style="text-decoration: line-through;" class="font-nunito font-light text-xs leading-3">R$ 100,00</p>
+                    <p class="font-nunito font-bold text-base">R$79,90</p>
+                  </div>
+                  <div>
+                    <p class="text-gray-50 text-xs font-nunito font-semibold bg-discount_color underline rounded-[4px] ml-2 px-2 py-[2px]">10% OFF</p>
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <p class="font-nunito text-xs">Ou em até <span class="font-bold text-neutral-800">10x de R$ 7,90</span></p>
+                </div>
+                <div class="m-auto">
+                  <button class="text-white font-nunito font-medium bg-blue_clear hover:bg-[#004ECC] w-full rounded-lg py-2 px-3" >Comprar</button>
+                </div>
+              </div>
+              <!-- Card -->
+              
+            </div>
+          <!-- Slide2 -->
+
+            <!--Slide3 -->
+            <div class="slide w-full flex-shrink-0 grid grid-cols-5 gap-0 p-5">
+              <!-- Card -->
+              <div style="box-shadow: 0px 0px 3px  #737373, -4px 0px 8px transparent;" class=" rounded-xl p-4 w-[95%]">
+                <div class="absolute top-8">
+                  <p class="bg-newproduct_color_tag text-white text-[10px] font-nunito font-medium rounded-md p-2 leading-none">NOVO</p>
+                </div>
+                <div class="h-[300px] overflow-hidden mb-5">
+                  <img src="./img/person1.png" alt="" class="object-cover w-full" />
+                </div>
+                <div class="">
+                  <h3 class="font-nunito font-extralight mb-2 leading-4">Lorem ipsum dolor sit amet consectetur adipisicing elit<h3>
+                </div>
+                <div class="flex align-middle">
+                  <div class="mb-1">
+                    <p style="text-decoration: line-through;" class="font-nunito font-light text-xs leading-3">R$ 100,00</p>
+                    <p class="font-nunito font-bold text-base">R$79,90</p>
+                  </div>
+                  <div>
+                    <p class="text-gray-50 text-xs font-nunito font-semibold bg-discount_color underline rounded-[4px] ml-2 px-2 py-[2px]">10% OFF</p>
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <p class="font-nunito text-xs">Ou em até <span class="font-bold text-neutral-800">10x de R$ 7,90</span></p>
+                </div>
+                <div class="m-auto">
+                  <button class="text-white font-nunito font-medium bg-blue_clear hover:bg-[#004ECC] w-full rounded-lg py-2 px-3" >Comprar</button>
+                </div>
+              </div>
+              <!-- Card -->
+
+              <!-- Card -->
+              <div style="box-shadow: 0px 0px 3px  #737373, -4px 0px 8px transparent;" class=" rounded-xl p-4 w-[95%]">
+                <div class="absolute top-8">
+                  <p class="bg-newproduct_color_tag text-white text-[10px] font-nunito font-medium rounded-md p-2 leading-none">NOVO</p>
+                </div>
+                <div class="h-[300px] overflow-hidden mb-5">
+                  <img src="./img/person1.png" alt="" class="object-cover w-full" />
+                </div>
+                <div class="">
+                  <h3 class="font-nunito font-extralight mb-2 leading-4">Lorem ipsum dolor sit amet consectetur adipisicing elit<h3>
+                </div>
+                <div class="flex align-middle">
+                  <div class="mb-1">
+                    <p style="text-decoration: line-through;" class="font-nunito font-light text-xs leading-3">R$ 100,00</p>
+                    <p class="font-nunito font-bold text-base">R$79,90</p>
+                  </div>
+                  <div>
+                    <p class="text-gray-50 text-xs font-nunito font-semibold bg-discount_color underline rounded-[4px] ml-2 px-2 py-[2px]">10% OFF</p>
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <p class="font-nunito text-xs">Ou em até <span class="font-bold text-neutral-800">10x de R$ 7,90</span></p>
+                </div>
+                <div class="m-auto">
+                  <button class="text-white font-nunito font-medium bg-blue_clear hover:bg-[#004ECC] w-full rounded-lg py-2 px-3" >Comprar</button>
+                </div>
+              </div>
+              <!-- Card -->
+              
+
+              <!-- Card -->
+              <div style="box-shadow: 0px 0px 3px  #737373, -4px 0px 8px transparent;" class=" rounded-xl p-4 w-[95%]">
+                <div class="absolute top-8">
+                  <p class="bg-newproduct_color_tag text-white text-[10px] font-nunito font-medium rounded-md p-2 leading-none">NOVO</p>
+                </div>
+                <div class="h-[300px] overflow-hidden mb-5">
+                  <img src="./img/person1.png" alt="" class="object-cover w-full" />
+                </div>
+                <div class="">
+                  <h3 class="font-nunito font-extralight mb-2 leading-4">Lorem ipsum dolor sit amet consectetur adipisicing elit<h3>
+                </div>
+                <div class="flex align-middle">
+                  <div class="mb-1">
+                    <p style="text-decoration: line-through;" class="font-nunito font-light text-xs leading-3">R$ 100,00</p>
+                    <p class="font-nunito font-bold text-base">R$79,90</p>
+                  </div>
+                  <div>
+                    <p class="text-gray-50 text-xs font-nunito font-semibold bg-discount_color underline rounded-[4px] ml-2 px-2 py-[2px]">10% OFF</p>
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <p class="font-nunito text-xs">Ou em até <span class="font-bold text-neutral-800">10x de R$ 7,90</span></p>
+                </div>
+                <div class="m-auto">
+                  <button class="text-white font-nunito font-medium bg-blue_clear hover:bg-[#004ECC] w-full rounded-lg py-2 px-3" >Comprar</button>
+                </div>
+              </div>
+              <!-- Card -->
+              
+          
+              <!-- Card -->
+              <div style="box-shadow: 0px 0px 3px  #737373, -4px 0px 8px transparent;" class=" rounded-xl p-4 w-[95%]">
+                <div class="absolute top-8">
+                  <p class="bg-newproduct_color_tag text-white text-[10px] font-nunito font-medium rounded-md p-2 leading-none">NOVO</p>
+                </div>
+                <div class="h-[300px] overflow-hidden mb-5">
+                  <img src="./img/person1.png" alt="" class="object-cover w-full" />
+                </div>
+                <div class="">
+                  <h3 class="font-nunito font-extralight mb-2 leading-4">Lorem ipsum dolor sit amet consectetur adipisicing elit<h3>
+                </div>
+                <div class="flex align-middle">
+                  <div class="mb-1">
+                    <p style="text-decoration: line-through;" class="font-nunito font-light text-xs leading-3">R$ 100,00</p>
+                    <p class="font-nunito font-bold text-base">R$79,90</p>
+                  </div>
+                  <div>
+                    <p class="text-gray-50 text-xs font-nunito font-semibold bg-discount_color underline rounded-[4px] ml-2 px-2 py-[2px]">10% OFF</p>
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <p class="font-nunito text-xs">Ou em até <span class="font-bold text-neutral-800">10x de R$ 7,90</span></p>
+                </div>
+                <div class="m-auto">
+                  <button class="text-white font-nunito font-medium bg-blue_clear hover:bg-[#004ECC] w-full rounded-lg py-2 px-3" >Comprar</button>
+                </div>
+              </div>
+              <!-- Card -->
+          
+
+              <!-- Card -->
+              <div style="box-shadow: 0px 0px 3px  #737373, -4px 0px 8px transparent;" class=" rounded-xl p-4 w-[95%]">
+                <div class="absolute top-8">
+                  <p class="bg-newproduct_color_tag text-white text-[10px] font-nunito font-medium rounded-md p-2 leading-none">NOVO</p>
+                </div>
+                <div class="h-[300px] overflow-hidden mb-5">
+                  <img src="./img/person1.png" alt="" class="object-cover w-full" />
+                </div>
+                <div class="">
+                  <h3 class="font-nunito font-extralight mb-2 leading-4">Lorem ipsum dolor sit amet consectetur adipisicing elit<h3>
+                </div>
+                <div class="flex align-middle">
+                  <div class="mb-1">
+                    <p style="text-decoration: line-through;" class="font-nunito font-light text-xs leading-3">R$ 100,00</p>
+                    <p class="font-nunito font-bold text-base">R$79,90</p>
+                  </div>
+                  <div>
+                    <p class="text-gray-50 text-xs font-nunito font-semibold bg-discount_color underline rounded-[4px] ml-2 px-2 py-[2px]">10% OFF</p>
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <p class="font-nunito text-xs">Ou em até <span class="font-bold text-neutral-800">10x de R$ 7,90</span></p>
+                </div>
+                <div class="m-auto">
+                  <button class="text-white font-nunito font-medium bg-blue_clear hover:bg-[#004ECC] w-full rounded-lg py-2 px-3" >Comprar</button>
+                </div>
+              </div>
+              <!-- Card -->
+              
+            </div>
+          <!-- Slide3 -->
+            </article>
+            <!-- Bolinhas de navegação -->
+            <div
+              class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex gap-2"
+            >
+              <span
+                class="dot w-2 h-2 bg-gray-400 rounded-full cursor-pointer"
+              ></span>
+              <span
+                class="dot w-2 h-2 bg-gray-400 rounded-full cursor-pointer"
+              ></span>
+              <span
+                class="dot w-2 h-2 bg-gray-400 rounded-full cursor-pointer"
+              ></span>
+            </div>
+
+          <!-- Botões de navegação -->
+          <button
+            id="prev"
+            class="group absolute top-1/2 left-[2px] transform -translate-y-1/2 text-blue_clear bg-white border-2 border-blue_clear hover:bg-[#004ECC] rounded-full p-1"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              class="fill-blue-500 group-hover:fill-white transition-colors duration-200">
+              <path d="m7.85 13l2.85 2.85q.3.3.288.7t-.288.7q-.3.3-.712.313t-.713-.288L4.7 12.7q-.3-.3-.3-.7t.3-.7l4.575-4.575q.3-.3.713-.287t.712.312q.275.3.288.7t-.288.7L7.85 11H19q.425 0 .713.288T20 12t-.288.713T19 13z"/>
+            </svg>
+          </button>
+          <button
+          id="next"
+          class="group absolute top-1/2 right-[15px] transform -translate-y-1/2  text-blue_clear bg-white border-2 border-blue_clear hover:bg-[#004ECC] rounded-full p-1"
         >
-         <!--Slide1 -->
-          <div class="slide w-full flex-shrink-0 grid grid-cols-5 gap-0 p-5">
-            <!-- Card -->
-            <div style="box-shadow: 0px 0px 3px  #737373, -4px 0px 8px transparent;" class=" rounded-xl p-4 w-[95%]">
-              <div class="absolute top-8">
-                <p class="bg-newproduct_color_tag text-white text-[10px] font-nunito font-medium rounded-md p-2 leading-none">NOVO</p>
-              </div>
-              <div class="h-[300px] overflow-hidden mb-5">
-                <img src="./img/person1.png" alt="" class="object-cover w-full" />
-              </div>
-              <div class="">
-                <h3 class="font-nunito font-extralight mb-2 leading-4">Lorem ipsum dolor sit amet consectetur adipisicing elit<h3>
-              </div>
-              <div class="flex align-middle">
-                <div class="mb-1">
-                  <p style="text-decoration: line-through;" class="font-nunito font-light text-xs leading-3">R$ 100,00</p>
-                  <p class="font-nunito font-bold text-base">R$79,90</p>
-                </div>
-                <div>
-                  <p class="text-gray-50 text-xs font-nunito font-semibold bg-discount_color underline rounded-[4px] ml-2 px-2 py-[2px]">10% OFF</p>
-                </div>
-              </div>
-              <div class="mb-4">
-                <p class="font-nunito text-xs">Ou em até <span class="font-bold text-neutral-800">10x de R$ 7,90</span></p>
-              </div>
-              <div class="m-auto">
-                <button class="text-white font-nunito font-medium bg-blue_clear hover:bg-[#004ECC] w-full rounded-lg py-2 px-3" >Comprar</button>
-              </div>
-            </div>
-            <!-- Card -->
-
-            <!-- Card -->
-            <div style="box-shadow: 0px 0px 3px  #737373, -4px 0px 8px transparent;" class=" rounded-xl p-4 w-[95%]">
-              <div class="absolute top-8">
-                <p class="bg-newproduct_color_tag text-white text-[10px] font-nunito font-medium rounded-md p-2 leading-none">NOVO</p>
-              </div>
-              <div class="h-[300px] overflow-hidden mb-5">
-                <img src="./img/person1.png" alt="" class="object-cover w-full" />
-              </div>
-              <div class="">
-                <h3 class="font-nunito font-extralight mb-2 leading-4">Lorem ipsum dolor sit amet consectetur adipisicing elit<h3>
-              </div>
-              <div class="flex align-middle">
-                <div class="mb-1">
-                  <p style="text-decoration: line-through;" class="font-nunito font-light text-xs leading-3">R$ 100,00</p>
-                  <p class="font-nunito font-bold text-base">R$79,90</p>
-                </div>
-                <div>
-                  <p class="text-gray-50 text-xs font-nunito font-semibold bg-discount_color underline rounded-[4px] ml-2 px-2 py-[2px]">10% OFF</p>
-                </div>
-              </div>
-              <div class="mb-4">
-                <p class="font-nunito text-xs">Ou em até <span class="font-bold text-neutral-800">10x de R$ 7,90</span></p>
-              </div>
-              <div class="m-auto">
-                <button class="text-white font-nunito font-medium bg-blue_clear hover:bg-[#004ECC] w-full rounded-lg py-2 px-3" >Comprar</button>
-              </div>
-            </div>
-            <!-- Card -->
-             
-  
-            <!-- Card -->
-            <div style="box-shadow: 0px 0px 3px  #737373, -4px 0px 8px transparent;" class=" rounded-xl p-4 w-[95%]">
-              <div class="absolute top-8">
-                <p class="bg-newproduct_color_tag text-white text-[10px] font-nunito font-medium rounded-md p-2 leading-none">NOVO</p>
-              </div>
-              <div class="h-[300px] overflow-hidden mb-5">
-                <img src="./img/person1.png" alt="" class="object-cover w-full" />
-              </div>
-              <div class="">
-                <h3 class="font-nunito font-extralight mb-2 leading-4">Lorem ipsum dolor sit amet consectetur adipisicing elit<h3>
-              </div>
-              <div class="flex align-middle">
-                <div class="mb-1">
-                  <p style="text-decoration: line-through;" class="font-nunito font-light text-xs leading-3">R$ 100,00</p>
-                  <p class="font-nunito font-bold text-base">R$79,90</p>
-                </div>
-                <div>
-                  <p class="text-gray-50 text-xs font-nunito font-semibold bg-discount_color underline rounded-[4px] ml-2 px-2 py-[2px]">10% OFF</p>
-                </div>
-              </div>
-              <div class="mb-4">
-                <p class="font-nunito text-xs">Ou em até <span class="font-bold text-neutral-800">10x de R$ 7,90</span></p>
-              </div>
-              <div class="m-auto">
-                <button class="text-white font-nunito font-medium bg-blue_clear hover:bg-[#004ECC] w-full rounded-lg py-2 px-3" >Comprar</button>
-              </div>
-            </div>
-            <!-- Card -->
-             
-        
-            <!-- Card -->
-            <div style="box-shadow: 0px 0px 3px  #737373, -4px 0px 8px transparent;" class=" rounded-xl p-4 w-[95%]">
-              <div class="absolute top-8">
-                <p class="bg-newproduct_color_tag text-white text-[10px] font-nunito font-medium rounded-md p-2 leading-none">NOVO</p>
-              </div>
-              <div class="h-[300px] overflow-hidden mb-5">
-                <img src="./img/person1.png" alt="" class="object-cover w-full" />
-              </div>
-              <div class="">
-                <h3 class="font-nunito font-extralight mb-2 leading-4">Lorem ipsum dolor sit amet consectetur adipisicing elit<h3>
-              </div>
-              <div class="flex align-middle">
-                <div class="mb-1">
-                  <p style="text-decoration: line-through;" class="font-nunito font-light text-xs leading-3">R$ 100,00</p>
-                  <p class="font-nunito font-bold text-base">R$79,90</p>
-                </div>
-                <div>
-                  <p class="text-gray-50 text-xs font-nunito font-semibold bg-discount_color underline rounded-[4px] ml-2 px-2 py-[2px]">10% OFF</p>
-                </div>
-              </div>
-              <div class="mb-4">
-                <p class="font-nunito text-xs">Ou em até <span class="font-bold text-neutral-800">10x de R$ 7,90</span></p>
-              </div>
-              <div class="m-auto">
-                <button class="text-white font-nunito font-medium bg-blue_clear hover:bg-[#004ECC] w-full rounded-lg py-2 px-3" >Comprar</button>
-              </div>
-            </div>
-            <!-- Card -->
-        
-
-            <!-- Card -->
-            <div style="box-shadow: 0px 0px 3px  #737373, -4px 0px 8px transparent;" class=" rounded-xl p-4 w-[95%]">
-              <div class="absolute top-8">
-                <p class="bg-newproduct_color_tag text-white text-[10px] font-nunito font-medium rounded-md p-2 leading-none">NOVO</p>
-              </div>
-              <div class="h-[300px] overflow-hidden mb-5">
-                <img src="./img/person1.png" alt="" class="object-cover w-full" />
-              </div>
-              <div class="">
-                <h3 class="font-nunito font-extralight mb-2 leading-4">Lorem ipsum dolor sit amet consectetur adipisicing elit<h3>
-              </div>
-              <div class="flex align-middle">
-                <div class="mb-1">
-                  <p style="text-decoration: line-through;" class="font-nunito font-light text-xs leading-3">R$ 100,00</p>
-                  <p class="font-nunito font-bold text-base">R$79,90</p>
-                </div>
-                <div>
-                  <p class="text-gray-50 text-xs font-nunito font-semibold bg-discount_color underline rounded-[4px] ml-2 px-2 py-[2px]">10% OFF</p>
-                </div>
-              </div>
-              <div class="mb-4">
-                <p class="font-nunito text-xs">Ou em até <span class="font-bold text-neutral-800">10x de R$ 7,90</span></p>
-              </div>
-              <div class="m-auto">
-                <button class="text-white font-nunito font-medium bg-blue_clear hover:bg-[#004ECC] w-full rounded-lg py-2 px-3" >Comprar</button>
-              </div>
-            </div>
-            <!-- Card -->
-             
-          </div>
-         <!-- Slide1 -->
-
-         <!--Slide2 -->
-         <div class="slide w-full flex-shrink-0 grid grid-cols-5 gap-0 p-5">
-          <!-- Card -->
-          <div style="box-shadow: 0px 0px 3px  #737373, -4px 0px 8px transparent;" class=" rounded-xl p-4 w-[95%]">
-            <div class="absolute top-8">
-              <p class="bg-newproduct_color_tag text-white text-[10px] font-nunito font-medium rounded-md p-2 leading-none">NOVO</p>
-            </div>
-            <div class="h-[300px] overflow-hidden mb-5">
-              <img src="./img/person1.png" alt="" class="object-cover w-full" />
-            </div>
-            <div class="">
-              <h3 class="font-nunito font-extralight mb-2 leading-4">Lorem ipsum dolor sit amet consectetur adipisicing elit<h3>
-            </div>
-            <div class="flex align-middle">
-              <div class="mb-1">
-                <p style="text-decoration: line-through;" class="font-nunito font-light text-xs leading-3">R$ 100,00</p>
-                <p class="font-nunito font-bold text-base">R$79,90</p>
-              </div>
-              <div>
-                <p class="text-gray-50 text-xs font-nunito font-semibold bg-discount_color underline rounded-[4px] ml-2 px-2 py-[2px]">10% OFF</p>
-              </div>
-            </div>
-            <div class="mb-4">
-              <p class="font-nunito text-xs">Ou em até <span class="font-bold text-neutral-800">10x de R$ 7,90</span></p>
-            </div>
-            <div class="m-auto">
-              <button class="text-white font-nunito font-medium bg-blue_clear hover:bg-[#004ECC] w-full rounded-lg py-2 px-3" >Comprar</button>
-            </div>
-          </div>
-          <!-- Card -->
-
-          <!-- Card -->
-          <div style="box-shadow: 0px 0px 3px  #737373, -4px 0px 8px transparent;" class=" rounded-xl p-4 w-[95%]">
-            <div class="absolute top-8">
-              <p class="bg-newproduct_color_tag text-white text-[10px] font-nunito font-medium rounded-md p-2 leading-none">NOVO</p>
-            </div>
-            <div class="h-[300px] overflow-hidden mb-5">
-              <img src="./img/person1.png" alt="" class="object-cover w-full" />
-            </div>
-            <div class="">
-              <h3 class="font-nunito font-extralight mb-2 leading-4">Lorem ipsum dolor sit amet consectetur adipisicing elit<h3>
-            </div>
-            <div class="flex align-middle">
-              <div class="mb-1">
-                <p style="text-decoration: line-through;" class="font-nunito font-light text-xs leading-3">R$ 100,00</p>
-                <p class="font-nunito font-bold text-base">R$79,90</p>
-              </div>
-              <div>
-                <p class="text-gray-50 text-xs font-nunito font-semibold bg-discount_color underline rounded-[4px] ml-2 px-2 py-[2px]">10% OFF</p>
-              </div>
-            </div>
-            <div class="mb-4">
-              <p class="font-nunito text-xs">Ou em até <span class="font-bold text-neutral-800">10x de R$ 7,90</span></p>
-            </div>
-            <div class="m-auto">
-              <button class="text-white font-nunito font-medium bg-blue_clear hover:bg-[#004ECC] w-full rounded-lg py-2 px-3" >Comprar</button>
-            </div>
-          </div>
-          <!-- Card -->
-           
-
-          <!-- Card -->
-          <div style="box-shadow: 0px 0px 3px  #737373, -4px 0px 8px transparent;" class=" rounded-xl p-4 w-[95%]">
-            <div class="absolute top-8">
-              <p class="bg-newproduct_color_tag text-white text-[10px] font-nunito font-medium rounded-md p-2 leading-none">NOVO</p>
-            </div>
-            <div class="h-[300px] overflow-hidden mb-5">
-              <img src="./img/person1.png" alt="" class="object-cover w-full" />
-            </div>
-            <div class="">
-              <h3 class="font-nunito font-extralight mb-2 leading-4">Lorem ipsum dolor sit amet consectetur adipisicing elit<h3>
-            </div>
-            <div class="flex align-middle">
-              <div class="mb-1">
-                <p style="text-decoration: line-through;" class="font-nunito font-light text-xs leading-3">R$ 100,00</p>
-                <p class="font-nunito font-bold text-base">R$79,90</p>
-              </div>
-              <div>
-                <p class="text-gray-50 text-xs font-nunito font-semibold bg-discount_color underline rounded-[4px] ml-2 px-2 py-[2px]">10% OFF</p>
-              </div>
-            </div>
-            <div class="mb-4">
-              <p class="font-nunito text-xs">Ou em até <span class="font-bold text-neutral-800">10x de R$ 7,90</span></p>
-            </div>
-            <div class="m-auto">
-              <button class="text-white font-nunito font-medium bg-blue_clear hover:bg-[#004ECC] w-full rounded-lg py-2 px-3" >Comprar</button>
-            </div>
-          </div>
-          <!-- Card -->
-           
-      
-          <!-- Card -->
-          <div style="box-shadow: 0px 0px 3px  #737373, -4px 0px 8px transparent;" class=" rounded-xl p-4 w-[95%]">
-            <div class="absolute top-8">
-              <p class="bg-newproduct_color_tag text-white text-[10px] font-nunito font-medium rounded-md p-2 leading-none">NOVO</p>
-            </div>
-            <div class="h-[300px] overflow-hidden mb-5">
-              <img src="./img/person1.png" alt="" class="object-cover w-full" />
-            </div>
-            <div class="">
-              <h3 class="font-nunito font-extralight mb-2 leading-4">Lorem ipsum dolor sit amet consectetur adipisicing elit<h3>
-            </div>
-            <div class="flex align-middle">
-              <div class="mb-1">
-                <p style="text-decoration: line-through;" class="font-nunito font-light text-xs leading-3">R$ 100,00</p>
-                <p class="font-nunito font-bold text-base">R$79,90</p>
-              </div>
-              <div>
-                <p class="text-gray-50 text-xs font-nunito font-semibold bg-discount_color underline rounded-[4px] ml-2 px-2 py-[2px]">10% OFF</p>
-              </div>
-            </div>
-            <div class="mb-4">
-              <p class="font-nunito text-xs">Ou em até <span class="font-bold text-neutral-800">10x de R$ 7,90</span></p>
-            </div>
-            <div class="m-auto">
-              <button class="text-white font-nunito font-medium bg-blue_clear hover:bg-[#004ECC] w-full rounded-lg py-2 px-3" >Comprar</button>
-            </div>
-          </div>
-          <!-- Card -->
-      
-
-          <!-- Card -->
-          <div style="box-shadow: 0px 0px 3px  #737373, -4px 0px 8px transparent;" class=" rounded-xl p-4 w-[95%]">
-            <div class="absolute top-8">
-              <p class="bg-newproduct_color_tag text-white text-[10px] font-nunito font-medium rounded-md p-2 leading-none">NOVO</p>
-            </div>
-            <div class="h-[300px] overflow-hidden mb-5">
-              <img src="./img/person1.png" alt="" class="object-cover w-full" />
-            </div>
-            <div class="">
-              <h3 class="font-nunito font-extralight mb-2 leading-4">Lorem ipsum dolor sit amet consectetur adipisicing elit<h3>
-            </div>
-            <div class="flex align-middle">
-              <div class="mb-1">
-                <p style="text-decoration: line-through;" class="font-nunito font-light text-xs leading-3">R$ 100,00</p>
-                <p class="font-nunito font-bold text-base">R$79,90</p>
-              </div>
-              <div>
-                <p class="text-gray-50 text-xs font-nunito font-semibold bg-discount_color underline rounded-[4px] ml-2 px-2 py-[2px]">10% OFF</p>
-              </div>
-            </div>
-            <div class="mb-4">
-              <p class="font-nunito text-xs">Ou em até <span class="font-bold text-neutral-800">10x de R$ 7,90</span></p>
-            </div>
-            <div class="m-auto">
-              <button class="text-white font-nunito font-medium bg-blue_clear hover:bg-[#004ECC] w-full rounded-lg py-2 px-3" >Comprar</button>
-            </div>
-          </div>
-          <!-- Card -->
-           
-        </div>
-       <!-- Slide2 -->
-
-         <!--Slide3 -->
-         <div class="slide w-full flex-shrink-0 grid grid-cols-5 gap-0 p-5">
-          <!-- Card -->
-          <div style="box-shadow: 0px 0px 3px  #737373, -4px 0px 8px transparent;" class=" rounded-xl p-4 w-[95%]">
-            <div class="absolute top-8">
-              <p class="bg-newproduct_color_tag text-white text-[10px] font-nunito font-medium rounded-md p-2 leading-none">NOVO</p>
-            </div>
-            <div class="h-[300px] overflow-hidden mb-5">
-              <img src="./img/person1.png" alt="" class="object-cover w-full" />
-            </div>
-            <div class="">
-              <h3 class="font-nunito font-extralight mb-2 leading-4">Lorem ipsum dolor sit amet consectetur adipisicing elit<h3>
-            </div>
-            <div class="flex align-middle">
-              <div class="mb-1">
-                <p style="text-decoration: line-through;" class="font-nunito font-light text-xs leading-3">R$ 100,00</p>
-                <p class="font-nunito font-bold text-base">R$79,90</p>
-              </div>
-              <div>
-                <p class="text-gray-50 text-xs font-nunito font-semibold bg-discount_color underline rounded-[4px] ml-2 px-2 py-[2px]">10% OFF</p>
-              </div>
-            </div>
-            <div class="mb-4">
-              <p class="font-nunito text-xs">Ou em até <span class="font-bold text-neutral-800">10x de R$ 7,90</span></p>
-            </div>
-            <div class="m-auto">
-              <button class="text-white font-nunito font-medium bg-blue_clear hover:bg-[#004ECC] w-full rounded-lg py-2 px-3" >Comprar</button>
-            </div>
-          </div>
-          <!-- Card -->
-
-          <!-- Card -->
-          <div style="box-shadow: 0px 0px 3px  #737373, -4px 0px 8px transparent;" class=" rounded-xl p-4 w-[95%]">
-            <div class="absolute top-8">
-              <p class="bg-newproduct_color_tag text-white text-[10px] font-nunito font-medium rounded-md p-2 leading-none">NOVO</p>
-            </div>
-            <div class="h-[300px] overflow-hidden mb-5">
-              <img src="./img/person1.png" alt="" class="object-cover w-full" />
-            </div>
-            <div class="">
-              <h3 class="font-nunito font-extralight mb-2 leading-4">Lorem ipsum dolor sit amet consectetur adipisicing elit<h3>
-            </div>
-            <div class="flex align-middle">
-              <div class="mb-1">
-                <p style="text-decoration: line-through;" class="font-nunito font-light text-xs leading-3">R$ 100,00</p>
-                <p class="font-nunito font-bold text-base">R$79,90</p>
-              </div>
-              <div>
-                <p class="text-gray-50 text-xs font-nunito font-semibold bg-discount_color underline rounded-[4px] ml-2 px-2 py-[2px]">10% OFF</p>
-              </div>
-            </div>
-            <div class="mb-4">
-              <p class="font-nunito text-xs">Ou em até <span class="font-bold text-neutral-800">10x de R$ 7,90</span></p>
-            </div>
-            <div class="m-auto">
-              <button class="text-white font-nunito font-medium bg-blue_clear hover:bg-[#004ECC] w-full rounded-lg py-2 px-3" >Comprar</button>
-            </div>
-          </div>
-          <!-- Card -->
-           
-
-          <!-- Card -->
-          <div style="box-shadow: 0px 0px 3px  #737373, -4px 0px 8px transparent;" class=" rounded-xl p-4 w-[95%]">
-            <div class="absolute top-8">
-              <p class="bg-newproduct_color_tag text-white text-[10px] font-nunito font-medium rounded-md p-2 leading-none">NOVO</p>
-            </div>
-            <div class="h-[300px] overflow-hidden mb-5">
-              <img src="./img/person1.png" alt="" class="object-cover w-full" />
-            </div>
-            <div class="">
-              <h3 class="font-nunito font-extralight mb-2 leading-4">Lorem ipsum dolor sit amet consectetur adipisicing elit<h3>
-            </div>
-            <div class="flex align-middle">
-              <div class="mb-1">
-                <p style="text-decoration: line-through;" class="font-nunito font-light text-xs leading-3">R$ 100,00</p>
-                <p class="font-nunito font-bold text-base">R$79,90</p>
-              </div>
-              <div>
-                <p class="text-gray-50 text-xs font-nunito font-semibold bg-discount_color underline rounded-[4px] ml-2 px-2 py-[2px]">10% OFF</p>
-              </div>
-            </div>
-            <div class="mb-4">
-              <p class="font-nunito text-xs">Ou em até <span class="font-bold text-neutral-800">10x de R$ 7,90</span></p>
-            </div>
-            <div class="m-auto">
-              <button class="text-white font-nunito font-medium bg-blue_clear hover:bg-[#004ECC] w-full rounded-lg py-2 px-3" >Comprar</button>
-            </div>
-          </div>
-          <!-- Card -->
-           
-      
-          <!-- Card -->
-          <div style="box-shadow: 0px 0px 3px  #737373, -4px 0px 8px transparent;" class=" rounded-xl p-4 w-[95%]">
-            <div class="absolute top-8">
-              <p class="bg-newproduct_color_tag text-white text-[10px] font-nunito font-medium rounded-md p-2 leading-none">NOVO</p>
-            </div>
-            <div class="h-[300px] overflow-hidden mb-5">
-              <img src="./img/person1.png" alt="" class="object-cover w-full" />
-            </div>
-            <div class="">
-              <h3 class="font-nunito font-extralight mb-2 leading-4">Lorem ipsum dolor sit amet consectetur adipisicing elit<h3>
-            </div>
-            <div class="flex align-middle">
-              <div class="mb-1">
-                <p style="text-decoration: line-through;" class="font-nunito font-light text-xs leading-3">R$ 100,00</p>
-                <p class="font-nunito font-bold text-base">R$79,90</p>
-              </div>
-              <div>
-                <p class="text-gray-50 text-xs font-nunito font-semibold bg-discount_color underline rounded-[4px] ml-2 px-2 py-[2px]">10% OFF</p>
-              </div>
-            </div>
-            <div class="mb-4">
-              <p class="font-nunito text-xs">Ou em até <span class="font-bold text-neutral-800">10x de R$ 7,90</span></p>
-            </div>
-            <div class="m-auto">
-              <button class="text-white font-nunito font-medium bg-blue_clear hover:bg-[#004ECC] w-full rounded-lg py-2 px-3" >Comprar</button>
-            </div>
-          </div>
-          <!-- Card -->
-      
-
-          <!-- Card -->
-          <div style="box-shadow: 0px 0px 3px  #737373, -4px 0px 8px transparent;" class=" rounded-xl p-4 w-[95%]">
-            <div class="absolute top-8">
-              <p class="bg-newproduct_color_tag text-white text-[10px] font-nunito font-medium rounded-md p-2 leading-none">NOVO</p>
-            </div>
-            <div class="h-[300px] overflow-hidden mb-5">
-              <img src="./img/person1.png" alt="" class="object-cover w-full" />
-            </div>
-            <div class="">
-              <h3 class="font-nunito font-extralight mb-2 leading-4">Lorem ipsum dolor sit amet consectetur adipisicing elit<h3>
-            </div>
-            <div class="flex align-middle">
-              <div class="mb-1">
-                <p style="text-decoration: line-through;" class="font-nunito font-light text-xs leading-3">R$ 100,00</p>
-                <p class="font-nunito font-bold text-base">R$79,90</p>
-              </div>
-              <div>
-                <p class="text-gray-50 text-xs font-nunito font-semibold bg-discount_color underline rounded-[4px] ml-2 px-2 py-[2px]">10% OFF</p>
-              </div>
-            </div>
-            <div class="mb-4">
-              <p class="font-nunito text-xs">Ou em até <span class="font-bold text-neutral-800">10x de R$ 7,90</span></p>
-            </div>
-            <div class="m-auto">
-              <button class="text-white font-nunito font-medium bg-blue_clear hover:bg-[#004ECC] w-full rounded-lg py-2 px-3" >Comprar</button>
-            </div>
-          </div>
-          <!-- Card -->
-           
-        </div>
-       <!-- Slide3 -->
-        </article>
-        <!-- Bolinhas de navegação -->
-        <div
-          class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex gap-2"
-        >
-          <span
-            class="dot w-2 h-2 bg-gray-400 rounded-full cursor-pointer"
-          ></span>
-          <span
-            class="dot w-2 h-2 bg-gray-400 rounded-full cursor-pointer"
-          ></span>
-          <span
-            class="dot w-2 h-2 bg-gray-400 rounded-full cursor-pointer"
-          ></span>
-        </div>
-
-        <!-- Botões de navegação -->
-        <button
-        id="prev"
-        class="group absolute top-1/2 left-[2px] transform -translate-y-1/2 text-blue_clear bg-white border-2 border-blue_clear hover:bg-[#004ECC] rounded-full p-1"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-          class="fill-blue-500 group-hover:fill-white transition-colors duration-200">
-          <path d="m7.85 13l2.85 2.85q.3.3.288.7t-.288.7q-.3.3-.712.313t-.713-.288L4.7 12.7q-.3-.3-.3-.7t.3-.7l4.575-4.575q.3-.3.713-.287t.712.312q.275.3.288.7t-.288.7L7.85 11H19q.425 0 .713.288T20 12t-.288.713T19 13z"/>
-        </svg>
-      </button>
-      <button
-      id="next"
-      class="group absolute top-1/2 right-[15px] transform -translate-y-1/2  text-blue_clear bg-white border-2 border-blue_clear hover:bg-[#004ECC] rounded-full p-1"
-    >
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-        class="fill-blue-500 group-hover:fill-white transition-colors duration-200">
-        <path d="M16.15 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.312t.712.287L19.3 11.3q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7z"/>
-      </svg>
-    </button>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            class="fill-blue-500 group-hover:fill-white transition-colors duration-200">
+            <path d="M16.15 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.312t.712.287L19.3 11.3q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7z"/>
+          </svg>
+          </button>
       </section>
       <!-- Carrousel Desktop -->
 
