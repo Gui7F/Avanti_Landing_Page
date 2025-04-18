@@ -16,3 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 import { initInput } from "./searchInput.js"
 initInput();
+
+import { initCarrouselOfer } from "./carouselOfer.js"
+const updateCarrouselOfer = initCarrouselOfer()
+updateCarrouselOfer()
