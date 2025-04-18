@@ -11,14 +11,14 @@ export const initInput = () => {
     if (inputDesktopValue.trim() !== "") {
       const itemDesktop = document.createElement("p");
       itemDesktop.className = "text-center bg-neutral-600 text-white w-[300px]";
-      itemDesktop.textContent = inputDesktopValue;
+      itemDesktop.textContent = `Você pesquisou por: ${inputDesktopValue}`;
       textResponse.appendChild(itemDesktop);
     }
   
     if (inputMobileValue.trim() !== "") {
       const itemMobile = document.createElement("p");
       itemMobile.className = "w-full h-auto text-center text-[18px] font-nunito font-bold bg-neutral-500";
-      itemMobile.textContent = inputMobileValue;
+      itemMobile.textContent = `Você pesquisou por: ${inputMobileValue}`;
       textResponseMobile.appendChild(itemMobile);
     }
   };
