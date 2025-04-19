@@ -20,3 +20,6 @@ initInput();
 import { initCarrouselOfer } from "./carouselOfer.js"
 const updateCarrouselOfer = initCarrouselOfer()
 updateCarrouselOfer()
+
+import { initMenuMobile } from "./menuMobile.js"
+initMenuMobile();
