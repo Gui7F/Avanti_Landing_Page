@@ -6,7 +6,7 @@
     <title>Avanti</title>
     <link href="./output.css" rel="stylesheet" />
     <link rel="stylesheet" href="font.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   </head>
   <body>
     
@@ -98,7 +98,7 @@
         </nav>
         <!-- Navbar Desktop -->
         <!-- Navbar Mobile -->
-         <nav class="min-[700px]:hidden">
+         <nav class="min-[700px]:hidden relative">
            <div class="bg-white w-[390px] h-[100px] flex items-center justify-around m-auto">
             <div class=" text-black">
               <button type="submit" class="text-[40px]">
@@ -141,7 +141,158 @@
             <div class="responseInputMobile"></div>
           </div>
           <!-- Part bottom input -->
+
+          <!-- Container Menu Mobile -->
+          <div class="fixed inset-0 z-50 font-nunito">
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black opacity-80"></div>
+             <!-- Menu Content -->
+            <div class="absolute left-0 top-0 w-[80%] h-screen bg-white overflow-y-auto p-4">
+              <details open class="itemMenu border-b-[1px] border-neutral-600 py-2 text-[#656565]" onclick="setActive(this)">
+                <summary class="list-none"><span class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M19.75 12a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0-5a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75m0 10a.75.75 0 0 0-.75-.75H5a.75.75 0 0 0 0 1.5h14a.75.75 0 0 0 .75-.75" clip-rule="evenodd"/></svg>Todas as Categorias</span></summary>
+                 <div class="flex items-center justify-between">
+                  <div>
+                    <p>Categoria</p>
+                    <p>Categoria</p>
+                    <p>Categoria</p>
+                    <p>Categoria</p>
+                    <p>Categoria</p>
+                    <p>Categoria</p>
+                    <p>Categoria</p>
+                    <p>Categoria</p>
+                    <p>Categoria</p>
+                    <p>Categoria</p>
+                  </div>
+                  <div>
+                    <p>Categoria</p>
+                    <p>Categoria</p>
+                    <p>Categoria</p>
+                    <p>Categoria</p>
+                    <p>Categoria</p>
+                    <p>Categoria</p>
+                    <p>Categoria</p>
+                    <p>Categoria</p>
+                    <p>Categoria</p>
+                    <p>Categoria</p>
+                  </div>
+                  <div>
+                    <p>Categoria</p>
+                    <p>Categoria</p>
+                    <p>Categoria</p>
+                    <p>Categoria</p>
+                    <p>Categoria</p>
+                    <p>Categoria</p>
+                    <p>Categoria</p>
+                    <p>Categoria</p>
+                    <p>Categoria</p>
+                    <p>Categoria</p>
+                  </div>
+                 </div>
+              </details>
+
+              <details class="itemMenu border-b-[1px] border-neutral-600 py-2 text-[#656565]" onclick="setActive(this)">
+                <summary class="list-none [&::-webkit-details-marker]:hidden cursor-pointer">Departamento</summary>
+                <div class="pl-4 space-y-1">
+                  <p>categoria</p>
+                  <p>categoria</p>
+                  <p>categoria</p>
+                  <p>categoria</p>
+                  <p>categoria</p>
+                  <p>categoria</p>
+                  <p>categoria</p>
+                </div>
+              </details>
+
+              <details class="itemMenu border-b-[1px] border-neutral-600 py-2 text-[#656565]" onclick="setActive(this)">
+                <summary class="list-none [&::-webkit-details-marker]:hidden cursor-pointer">Departamento</summary>
+                <div class="pl-4 space-y-1">
+                  <p>categoria</p>
+                  <p>categoria</p>
+                  <p>categoria</p>
+                  <p>categoria</p>
+                  <p>categoria</p>
+                  <p>categoria</p>
+                  <p>categoria</p>
+                </div>
+              </details>
+
+              <details class="itemMenu border-b-[1px] border-neutral-600 py-2 text-[#656565]" onclick="setActive(this)">
+                <summary class="list-none [&::-webkit-details-marker]:hidden cursor-pointer">Departamento</summary>
+                <div class="pl-4 space-y-1">
+                  <p>categoria</p>
+                  <p>categoria</p>
+                  <p>categoria</p>
+                  <p>categoria</p>
+                  <p>categoria</p>
+                  <p>categoria</p>
+                  <p>categoria</p>
+                </div>
+              </details>
+
+              <details class="itemMenu border-b-[1px] border-neutral-600 py-2 text-[#656565]" onclick="setActive(this)">
+                <summary class="list-none [&::-webkit-details-marker]:hidden cursor-pointer">Departamento</summary>
+                <div class="pl-4 space-y-1">
+                  <p>categoria</p>
+                  <p>categoria</p>
+                  <p>categoria</p>
+                  <p>categoria</p>
+                  <p>categoria</p>
+                  <p>categoria</p>
+                  <p>categoria</p>
+                </div>
+              </details>
+
+              <details class="itemMenu border-b-[1px] border-neutral-600 py-2 text-[#656565]" onclick="setActive(this)">
+                <summary class="list-none [&::-webkit-details-marker]:hidden cursor-pointer">Departamento</summary>
+                <div class="pl-4 space-y-1">
+                  <p>categoria</p>
+                  <p>categoria</p>
+                  <p>categoria</p>
+                  <p>categoria</p>
+                  <p>categoria</p>
+                  <p>categoria</p>
+                  <p>categoria</p>
+                </div>
+              </details>
+
+              <div class="w-full h-[298px] rounded-lg overflow-hidden relative mt-2">
+                <img class="h-full w-full object-cover" src="./img/cup2.png" alt="">
+              
+                <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+        
+                <div class="absolute inset-0 z-20 text-white font-nunito text-[25px] text-left px-2 flex flex-col items-center justify-center leading-8">
+                  <p class="mr-16">
+                    Confira os<br>
+                    Produtos<br>
+                    <span class="font-bold">Que<br>acabaram<br>De chegar</span>
+                  </p>
+                  <button class="mt-4 mr-12 text-[12px] px-8 py-1 rounded-lg bg-transparent border  border-white text-white font-nunito font-bold">
+                    VER TODOS
+                  </button>
+                </div>
+              </div>
+
+              <script>
+                function setActive(element) {
+                  const summaries = document.querySelectorAll(".itemMenu > summary");
+              
+                  // Remove classe de todos os summaries
+                  summaries.forEach(summary => {
+                    summary.classList.remove("text-[#005CFF]", "font-bold");
+                    summary.classList.add("text-[#656565]");
+                  });
+              
+                  // Adiciona a classe no summary clicado
+                  const summary = element.querySelector("summary");
+                  summary.classList.remove("text-[#656565]");
+                  summary.classList.add("text-[#005CFF]", "font-bold");
+                }
+              </script>
+            </div>
+          </div>
+          <!-- Container Menu Mobile -->
          </nav>
+          
         <!-- Navbar Mobile -->
       </div>
  

@@ -30,7 +30,7 @@ const departments = [
   const containerCat = document.getElementById("containerCat"); 
   const deptHover = document.querySelectorAll(".deptHover")
 
-  console.log(deptHover)
+
 
   const addCategorias = () => {
     containerCat.innerHTML = "";
