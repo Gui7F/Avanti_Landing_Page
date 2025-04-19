@@ -11,7 +11,7 @@
 - ✅ **Carrossel animado** para desktop com transições suaves.
 - ✅ **Carrossel touch screen** exclusivo para dispositivos móveis.
 - ✅ **Pesquisa com resposta de texto dinâmica** via campo de input na navbar.
-- ✅ **Menu com hover interativo** em telas desktop.
+- ✅ **Menu com hover interativo** em telas desktop e mobile.
 - ✅ **Layout responsivo** com adaptação total entre mobile e desktop.
 
 ## 🧪 Tecnologias Utilizadas
